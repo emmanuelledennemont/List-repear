@@ -32,7 +32,8 @@ struct ContentView: View {
                                     .datePickerStyle(.compact)
                                     .padding(.horizontal)
                                 }
-                                
+                                Spacer()
+                                .padding()
                                 VStack {
                                     DatePicker("Heure", selection: Binding<Date>(
                                         get: { date },
@@ -47,7 +48,7 @@ struct ContentView: View {
                                 }
                             }
                             
-                            Spacer()
+                            Spacer() // Aligne les éléments vers la droite
                         }
                         
                         HStack {
@@ -64,6 +65,7 @@ struct ContentView: View {
                                 Text(data[index].sub)
                                     .foregroundColor(.gray)
                             }
+                            
                             Spacer()
                 
                             NavigationLink(destination: DetailView()) {
