@@ -1,5 +1,6 @@
 // ContentView.swift
 
+
 import SwiftUI
 
 struct ContentView: View {
@@ -96,6 +97,7 @@ struct ContentView: View {
         ), displayedComponents: displayedComponents)
         .labelsHidden()
         .datePickerStyle(.compact)
+        .environment(\.locale, Locale(identifier: "fr_FR")) // Utilisation de la locale française
         .padding(.horizontal)
     }
 }
@@ -129,6 +131,7 @@ struct BottomShadowModifier: ViewModifier {
             )
     }
 }
+
 #Preview {
     ContentView()
 }
