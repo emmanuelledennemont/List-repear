@@ -22,11 +22,11 @@ extension DataType {
     func iconName() -> String {
         switch self {
         case .vente:
-            return "dollarsign.circle.fill"
+            return "washer.fill"
         case .service:
             return "wrench.and.screwdriver.fill"
         case .evenement:
-            return "calendar"
+            return "iphone.gen1"
         }
     }
 }
